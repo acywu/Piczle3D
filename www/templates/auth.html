@@ -1,0 +1,110 @@
+<style>.bar.bar-light {
+      background-color: rgba(255,255,255,.66) !important;
+    }
+    .scroll-content {
+      overflow: visible !important;
+    }
+
+.app-bg2 {
+    background-image: url("./img/bg.gif");
+    background-color: #cccccc;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.MyClass {
+
+      -webkit-transition: background 300ms ease-in 0s; /* property duration timing-function delay */
+    -moz-transition: background 300ms ease-in 0s;
+    -o-transition: background 300ms ease-in 0s;
+    transition: background 300ms ease-in 0s;
+    background-image: url("./img/jackybg.png");
+
+}
+
+  .signin-page2{
+    padding-top: 50px;
+  }
+  .card2{
+    background-color:rgba(0,0,0,0);
+    border:0px solid #000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+
+  }
+  .button.button-dark2{
+    background-color: rgba(0,0,0,0.8);
+  }
+  .item2{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: 0px solid #000;
+  }
+  textarea.loginfield, input[type="text"].loginfield, input[type="password"].loginfield,.input-label2{
+    color:white;
+  }
+  .circular {
+    left: 50%;
+    margin-left: -100px;
+position:fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+   background: url(./img/logo.png) no-repeat;
+    background-position: center 0px; 
+  }
+ .mycircular {
+        -webkit-transition: background 600ms ease-out 0s; /* property duration timing-function delay */
+    -moz-transition: background 600ms ease-out 0s;
+    -o-transition: background 600ms ease-out 0s;
+    transition: background 600ms ease-out 0s;
+   background: url(./img/jackypic.png) no-repeat;
+ }
+</style>
+
+
+<ion-view view-title="" hide-nav-bar="true">
+  
+  <ion-content class="signin-page signin-page2 app-bg app-bg2" id="loginbg"  scroll="false" >
+    <div class="circular" id="ppic"></div>
+
+    <div class="list card card2" style="      padding-top: 200px;">
+
+      <label class="item item2 item-input username item-input-right item-icon-left">
+        <i class="icon ion-email"></i>
+        <span class="input-label input-label2">　　Email</span>
+        <input type="text"  ng-model="user.email" name="email" class=loginfield onblur="
+        if(this.value=='jacky'){
+        document.getElementById('loginbg').className += ' MyClass';
+        document.getElementById('ppic').className += ' mycircular';
+        }"></input>
+      </label>
+
+      <label class="item item2 item-input lock item-input-right item-icon-left">
+        <i class="icon ion-key"></i>
+        <span class="input-label input-label2">　　Password</span>
+        <input type="password" ng-model="user.password" class=loginfield></input>
+      </label>
+
+      <!--
+      <ion-checkbox ng-checked="true" ng-model="user.rmbmeisChecked">{{ 'signin_rmb_logininfo' | translate }}</ion-checkbox>-->
+
+    <button class="button button-full button-dark button-dark2" ng-click="navigateTo('tab.request')">
+      Sign in
+    </button>
+
+  </div>
+
+  <div class="list card card2">
+
+  <button class="button button-block button-dark button-dark2" href="#/tab/dash">
+    Sign Up
+  </button>
+
+
+</div>
+
+
+  </ion-content>
+</ion-view>

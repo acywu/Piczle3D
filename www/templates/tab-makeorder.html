@@ -1,0 +1,37 @@
+<ion-view view-title="Make Order" >
+  <ion-content class="padding" >
+
+
+
+    <div class="item item-image" style="max-height: 350px" ng-show="isPreviewShow">
+      <tjs-model-viewer assimp-url="assimpModelUrl"  class="ng-isolate-scope ng-scope" ng-show="isPreviewShow">
+    </div>
+
+  <div class="item item-divider" ng-show="isPreviewShow">
+    Purchase
+  </div>
+
+      <label class="item item-input" ng-show="isPreviewShow">
+    <span class="input-label">Item Description</span>
+    <input type="text">
+  </label>
+
+  <label class="item item-input item-select" ng-show="isPreviewShow">
+    <div class="input-label">
+      Size
+    </div>
+    <select>
+      <option>10x10x10 cm</option>
+      <option selected>20x20x20 cm</option>
+      <option>30x30x30 cm</option>
+    </select>
+  </label>
+
+
+
+    <button class="button button-block button-positive" ng-click="navigateTo()" ng-show="isPreviewShow">
+   Order
+</button>
+
+  </ion-content>
+</ion-view>

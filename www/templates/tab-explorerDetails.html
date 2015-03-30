@@ -1,0 +1,58 @@
+<ion-view view-title="Item Details">
+  <ion-content class="padding">
+
+    <div class="item item-avatar">
+      <img src="./img/jackypic.png">
+      <h2>Airplane</h2>
+      <p>Created By Peter Yu</p>
+    </div>
+
+    <div class="item item-image">
+      <img src="./img/cake.png">
+    </div>
+
+
+  <div class="item item-divider">
+    Purchase
+  </div>
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Size
+    </div>
+    <select>
+      <option>10x10 cm</option>
+      <option selected>20x20 cm</option>
+      <option>30x30 cm</option>
+    </select>
+  </label>
+
+
+
+    <button class="button button-block button-assertive" ng-click="navigateTo()">
+   Buy
+</button>
+
+  <div class="item item-divider">
+    Review
+  </div>
+
+
+
+<ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,93 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+
+
+$bar-height:                      44px !default;
+$bar-title-font-size:             17px !default;
+$bar-padding-portrait:            5px !default;
+$bar-padding-landscape:           5px !default;
+
+
+$bar-positive-bg:                 #FFFFFF !default;
+$bar-positive-text:               #ea1624 !default;
+$bar-positive-border:             #FFFFFF !default;
+$bar-positive-active-bg:          #ea1624 !default;
+$bar-positive-active-border:      #ea1624 !default;
+
+
+$tabs-positive-bg:                #FFFFFF !default;
+$tabs-positive-border:            #FFFFFF !default;
+$tabs-positive-text:              #ea1624 !default;
+
+.tab-item
+.icon{
+  color: #ea1624;
+}
+
+.scroll-bar-indicator
+{
+  display: none;
+}
+
+.auth-bg {
+    background-image: url("http://media.giphy.com/media/wT3gfw5kBuheU/giphy.gif");
+    background-color: #cccccc;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.app-bg {
+  background-color: #27ae60;
+}
+
+.logo-image{
+  max-width:50%;
+  max-height:50%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+#grid {
+
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+    
+}
+#grid img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";

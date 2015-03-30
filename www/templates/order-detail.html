@@ -1,0 +1,38 @@
+<ion-view view-title="Item Details">
+  <ion-content class="padding">
+
+    <div class="item">
+      <h2>{{order.description}}</h2>
+      <p>Created By {{order.user}}</p>
+    </div>
+
+    <div class="item item-image">
+      <img ng-src="{{order.itemImage}}">
+    </div>
+
+
+  <div class="item item-divider">
+    Order Details
+  </div>
+
+    <label class="item item-input">
+    <span class="input-label">Size</span>
+    {{order.size}}
+  </label>
+      <label class="item item-input">
+    <span class="input-label">Price</span>
+    {{order.price}}
+  </label>
+        <label class="item item-input">
+    <span class="input-label">Payment</span>
+    {{order.payment}}
+  </label>
+        <label class="item item-input">
+    <span class="input-label">Status</span>
+    {{order.status}}
+  </label>
+
+
+
+  </ion-content>
+</ion-view>
