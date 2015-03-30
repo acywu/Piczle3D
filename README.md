@@ -1,4 +1,4 @@
-CASL-GRS app front end (ionic, angularjs, cordova)
+Piczle3D apps in iOS and Android, Made at UST hackathon 2015
 ================================================================
 
 
